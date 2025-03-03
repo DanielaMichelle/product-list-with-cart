@@ -1,0 +1,55 @@
+.orderCart {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--rose-100);
+    padding: 12px 0;
+}
+
+.orderCartContent {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.orderCartContent h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--rose-900);
+}
+
+.orderCartContent div {
+    display: flex;
+    gap: 8px;
+}
+
+.quantity {
+    color: var(--red);
+    font-weight: 600;
+}
+
+.singlePrice {
+    color: var(--rose-300);
+}
+
+.totalPrice {
+    color: var(--rose-400);
+    font-weight: 600;
+}
+
+.orderCartRemoveBtn {
+    cursor: pointer;
+    border: 2px solid var(--rose-300);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orderCartRemoveBtn:hover {
+    border-color: var(--rose-900);
+    filter: hue-rotate(0deg) saturate(100%) brightness(0.09) sepia(1) saturate(1000%) hue-rotate(14deg);
+}

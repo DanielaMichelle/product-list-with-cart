@@ -1,0 +1,113 @@
+.dessertCart {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    width: 100%;
+}
+
+.dessertCartTop {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+.dessertCartTop .dessertCartImageContainer {
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+}
+
+.dessertCartTop .dessertCartImageContainer .dessertCartImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dessertCartTop .addToCartBtn {
+    position: absolute;
+    bottom: -7%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid var(--rose-400);
+    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 50px;
+    width: max-content;
+    font-size: 10px;
+    font-weight: 600;
+    background-color: white;
+    cursor: pointer;
+}
+
+.dessertCartTop .addToCartBtn:hover {
+    border-color: var(--red);
+    color: var(--red);
+}
+                 
+.dessertCartTop .addOneDessertBtn {
+    position: absolute;
+    bottom: -7%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    gap: 27px;
+    font-size: 10px;
+    background-color: var(--red);
+    color: white;
+    border: 1px solid var(--red);
+} 
+
+.addOneDessertBtn .decrementIconContainer,
+.addOneDessertBtn .incrementIconContainer {
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.addOneDessertBtn .decrementIconContainer:hover,
+.addOneDessertBtn .incrementIconContainer:hover {
+    border: 1px solid var(--red);
+    background-color: white;
+}
+
+.decrementIconContainer:hover .decrementIcon,
+.incrementIconContainer:hover .incrementIcon {
+    filter: brightness(0) saturate(100%) invert(26%) sepia(70%) saturate(2128%) hue-rotate(354deg) brightness(94%) contrast(96%);
+}
+
+.dessertCartBottom {
+    padding-top: 30px;
+}
+
+.dessertCartBottom .dessertCartType {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--rose-500);
+    padding-bottom: 4px;
+    display: block;
+}
+
+.dessertCartBottom h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--rose-900);
+    padding-bottom: 4px;
+}
+
+.dessertCartBottom .dessertCartPrice {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--red);
+}

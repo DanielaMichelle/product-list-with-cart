@@ -1,0 +1,44 @@
+.orderModal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 2px solid var(--rose-100);
+    padding: 12px 0;
+    background-color: transparent;
+}
+
+.orderModalContent {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 12px;
+}
+
+.orderModalImageContainer {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    overflow: hidden;
+
+}
+
+.orderModalName {
+    color: var(--rose-900);
+    margin-bottom: 8px;
+}
+
+.orderModalQuantity {
+    color: var(--red);
+    font-weight: 600;
+    padding-right: 8px;
+}
+
+.orderModalPrice {
+    color: var(--rose-300);
+}
+
+.orderModalTotalPrice {
+    color: var(--rose-900);
+    font-weight: 600;
+}
